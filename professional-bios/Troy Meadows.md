@@ -44,6 +44,7 @@
 * Tools
     * Git
     * XCode
+    * Visual Studio
     * DynamoDB
     * Figma
 
