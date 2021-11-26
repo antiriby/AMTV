@@ -7,7 +7,7 @@
 
 ## Project Tasks and Timeline
 * [Task List](https://github.com/antiriby/AMTV/blob/main/Tasklist.md)
-* [Timeline & Effort Matrix](https://github.com/antiriby/AMTV/blob/main/Timeline%20and%20Effort%20Matrix.md)
+* [Timeline & Effort Matrix](https://github.com/antiriby/AMTV/blob/main/Milestones%2C%20Timeline%2C%20and%20Effort%20Matrix.pdf)
 
 ## ABET Concerns Essay
 
@@ -24,7 +24,3 @@
 * [Troy Meadows](https://github.com/antiriby/AMTV/blob/main/professional-bios/Troy%20Meadows.md)
 * [Faith Tremmel](https://github.com/antiriby/AMTV/blob/main/professional-bios/Faith%20Tremmel.md)
 * Sydni-Dee Venter
-
-## Budget
-
-## Appendix
