@@ -16,7 +16,7 @@
 ## Self-Assessment Essays
 * [Briana Antiri](https://github.com/antiriby/AMTV/blob/main/Self-Assessment%20Essays/Briana%20Antiri.md)
 * [Troy Meadows](https://github.com/antiriby/AMTV/blob/main/Self-Assessment%20Essays/Troy%20Meadows.md)
-* Faith Tremmel
+* [Faith Tremmel](https://github.com/antiriby/AMTV/blob/main/Self-Assessment%20Essays/Tremmel_Individual_Capstone_Assessment.pdf)
 * Sydni-Dee Venter
 
 ## Professional Biographies
