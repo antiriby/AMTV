@@ -11,10 +11,10 @@
 
 ## ABET Concerns Essay
 
-## Powerpoint Slideshow
+## [Powerpoint Slideshow](https://github.com/antiriby/AMTV/blob/main/Slideshow.md)
 
 ## Self-Assessment Essays
-* Briana Antiri
+* [Briana Antiri](https://github.com/antiriby/AMTV/blob/main/Self-Assessment%20Essays/Briana%20Antiri.md)
 * Troy Meadows
 * Faith Tremmel
 * Sydni-Dee Venter
