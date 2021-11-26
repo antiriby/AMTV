@@ -10,7 +10,7 @@
 * [Timeline & Effort Matrix](https://github.com/antiriby/AMTV/blob/main/Milestones%2C%20Timeline%2C%20and%20Effort%20Matrix.pdf)
 
 ## ABET Concerns Essay
-* [Project Contraints](https://github.com/antiriby/AMTV/blob/main/Project%20Constraints.pdf
+* [Project Contraints](https://github.com/antiriby/AMTV/blob/main/Project%20Constraints.pdf)
 
 ## [Powerpoint Slideshow](https://github.com/antiriby/AMTV/blob/main/Slideshow.md)
 
