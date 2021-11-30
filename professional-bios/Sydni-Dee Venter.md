@@ -15,5 +15,11 @@
 ##### Industry research and competitive analysis
 ##### Managing user stories and deadlines given by stakeholders
 
-# Project Sought
-#### Open to web and app development
+# Skills
+#### C#
+#### C++
+#### Python
+#### Vue.js
+#### Mocha
+#### Chai
+#### HTML
