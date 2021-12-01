@@ -17,11 +17,11 @@
 ## Self-Assessment Essays
 * [Briana Antiri](https://github.com/antiriby/AMTV/blob/main/Self-Assessment%20Essays/Briana%20Antiri.md)
 * [Troy Meadows](https://github.com/antiriby/AMTV/blob/main/Self-Assessment%20Essays/Troy%20Meadows.md)
-* [Faith Tremmel](https://github.com/antiriby/AMTV/blob/main/Self-Assessment%20Essays/Tremmel_Individual_Capstone_Assessment.pdf)
-* Sydni-Dee Venter
+* [Faith Tremmel](https://github.com/antiriby/AMTV/blob/main/Self-Assessment%20Essays/Faith%20Tremmel.md)
+* [Sydni-Dee Venter](https://github.com/antiriby/AMTV/blob/main/Self-Assessment%20Essays/Sydni-Dee%20Venter.md)
 
 ## Professional Biographies
 * [Briana Antiri](https://github.com/antiriby/AMTV/blob/main/professional-bios/Briana%20Antiri.md)
 * [Troy Meadows](https://github.com/antiriby/AMTV/blob/main/professional-bios/Troy%20Meadows.md)
 * [Faith Tremmel](https://github.com/antiriby/AMTV/blob/main/professional-bios/Faith%20Tremmel.md)
-* Sydni-Dee Venter
+* [Sydni-Dee Venter](https://github.com/antiriby/AMTV/blob/main/professional-bios/Sydni-Dee%20Venter.md)
