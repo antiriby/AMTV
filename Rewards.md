@@ -19,6 +19,3 @@
 * Swipe left on the reward you would like to delete
 * Tap **Delete**
 * The reward should be removed from the rewards list
-
-## Approving/Declining Rewards
-
