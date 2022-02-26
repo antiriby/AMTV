@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterHouseholdActivity">
+
+    <Button
+        android:id="@+id/btnRegistrationNext"
+        android:layout_width="272dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:text="Next"
+        app:layout_constraintEnd_toEndOf="@+id/registrationConfirmPassword"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/registrationConfirmPassword"
+        app:layout_constraintTop_toBottomOf="@+id/registrationConfirmPassword" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="214dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="116dp"
+        android:text="Create a Household!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextHouseholdName"
+        android:layout_width="280dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="228dp"
+        android:ems="10"
+        android:hint="Family/Household Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/registrationFamilyPassword"
+        android:layout_width="274dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:hint="Family Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextHouseholdName" />
+
+    <EditText
+        android:id="@+id/registrationConfirmPassword"
+        android:layout_width="278dp"
+        android:layout_height="63dp"
+        android:ems="10"
+        android:hint="Confirm Family Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registrationFamilyPassword" />
+
+    <Button
+        android:id="@+id/btnRegistrationSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Skip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

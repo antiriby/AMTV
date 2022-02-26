@@ -39,22 +39,19 @@ public class ProfileActivity extends AppCompatActivity {
         final TextView firstNameTextView = (TextView) findViewById(R.id.txtProfileFirstName);
         final TextView lastNameTextView = (TextView) findViewById(R.id.txtProfileLastName);
         final TextView emailTextView = (TextView) findViewById(R.id.txtProfileEmail);
-        final TextView householdSizeTextView = (TextView) findViewById(R.id.txtProfileHouseholdSize);
 
-        dbReference.child(userId).addListenerForSingleValueEvent(new ValueEventListener() {
+        dbReference.child("Users").child(userId).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 User userProfile = snapshot.getValue(User.class);
-                System.out.println(snapshot.getChildrenCount());
+                System.out.println(snapshot.getValue() == null);
                 if(userProfile != null) {
-                    String firstName = userProfile.firstName;
-                    String lastName = userProfile.lastName;
-                    String email = userProfile.email;
-                    String householdSize = Integer.toString(userProfile.household.members.size());
+                    String firstName = userProfile.getName();
+                    String lastName = userProfile.getRole();
+                    String email = userProfile.getEmail();
                     firstNameTextView.setText("First Name: "+ firstName);
                     lastNameTextView.setText("Last Name: "+ lastName);
                     emailTextView.setText("Email: " + email);
-                    householdSizeTextView.setText("Household Size: " + householdSize);
 
                 }
             }

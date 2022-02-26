@@ -3,23 +3,36 @@ package com.example.amtvregistrationdemo;
 import java.util.ArrayList;
 
 public class User {
-    public String firstName, lastName, email;
-    public Household household;
+    private final String name, email, role;
+    private final ArrayList<Task>tasks;
 
-    public User() {}
-
-    public User(String firstName, String lastName, String email) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public User(String name, String email, Boolean admin) {
+        this.name = name;
         this.email = email;
-        this.household = new Household(new ArrayList<User>());
 
+        if(admin) {
+            role = "Admin";
+        } else {
+            role = "Member";
+        }
+
+        tasks = new ArrayList<Task>();
     }
 
-    public User(String firstName, String lastName, String email, Household household) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        this.household = household;
+
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public ArrayList<Task> getTasks() {
+        return tasks;
     }
 }

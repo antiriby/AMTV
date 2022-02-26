@@ -17,15 +17,21 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.util.ArrayList;
-
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
+
+    private FirebaseUser user;
+    private DatabaseReference dbReference;
     private FirebaseAuth mAuth;
-    private TextView  banner, registerUser;
-    private EditText editTextFirstName, editTextLastName, editTextEmail, editTextPassword;
+
+    private String userId;
+    private TextView  registerUser;
+    private EditText editTextHouseholdName, editTextName, editTextEmail, editTextFamilyPassword, editTextConfirmPassword;
     private ProgressBar progressBar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,16 +39,16 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         setContentView(R.layout.activity_register);
         mAuth = FirebaseAuth.getInstance();
 
-        banner = (TextView) findViewById(R.id.txtBanner);
-        banner.setOnClickListener(this);
+//s
 
         registerUser = (Button) findViewById(R.id.btnRegister);
         registerUser.setOnClickListener(this);
 
-        editTextFirstName = (EditText) findViewById(R.id.txtFirstName);
-        editTextLastName = (EditText) findViewById(R.id.txtLastName);
-        editTextEmail = (EditText) findViewById(R.id.txtEmail);
-        editTextPassword= (EditText) findViewById(R.id.txtPassword);
+        editTextHouseholdName = (EditText) findViewById(R.id.txtRegisterHouseholdName);
+        editTextName = (EditText) findViewById(R.id.txtRegisterName);
+        editTextEmail = (EditText) findViewById(R.id.txtRegisterEmail);
+        editTextFamilyPassword = (EditText) findViewById(R.id.txtRegisterFamilyPassword);
+        editTextConfirmPassword = (EditText) findViewById(R.id.txtRegisterConfirmPassword);
 
         progressBar = (ProgressBar) findViewById(R.id.registrationProgressBar);
 
@@ -53,33 +59,31 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     @Override
     public void onClick(View view) {
         switch(view.getId()) {
-            case R.id.txtBanner:
-                finish();
-                break;
 
             case R.id.btnRegister:
                 registerUser();
                 break;
-
         }
 
     }
 
     private void registerUser() {
-        String firstName = editTextFirstName.getText().toString().trim();
-        String lastName = editTextLastName.getText().toString().trim();
+        String householdName = editTextHouseholdName.getText().toString().trim();
+        String name = editTextName.getText().toString().trim();
         String email = editTextEmail.getText().toString().trim();
-        String password = editTextPassword.getText().toString().trim();
+        String familyPassword = editTextFamilyPassword.getText().toString().trim();
+        String confirmPassword = editTextConfirmPassword.getText().toString().trim();
+        Boolean adminRole = true;
 
-        if (firstName.isEmpty()){
-            editTextFirstName.setError("First name is required!");
-            editTextFirstName.requestFocus();
+        if (householdName.isEmpty()){
+            editTextHouseholdName.setError("First name is required!");
+            editTextHouseholdName.requestFocus();
             return;
         }
 
-        if (lastName.isEmpty()){
-            editTextLastName.setError("Last name is required!");
-            editTextLastName.requestFocus();
+        if (name.isEmpty()){
+            editTextName.setError("Last name is required!");
+            editTextName.requestFocus();
             return;
         }
 
@@ -95,34 +99,31 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             return;
         }
 
-        if (password.isEmpty()){
-            editTextPassword.setError("Password is required!");
-            editTextPassword.requestFocus();
+        if (familyPassword.isEmpty()){
+            editTextFamilyPassword.setError("Password is required!");
+            editTextFamilyPassword.requestFocus();
             return;
         }
 
-        if (password.length() < 6){
-            editTextPassword.setError("Minimum password length is 6 characters");
-            editTextPassword.requestFocus();
+        if (familyPassword.length() < 6){
+            editTextFamilyPassword.setError("Minimum password length is 6 characters");
+            editTextFamilyPassword.requestFocus();
             return;
         }
 
-        //Create a household
-        Household household = new Household(
-                new ArrayList<User>() {
-                    {
-                        add(new User("Briana", "Antiri", "luvu@gmail.com"));
-                    }
-                });
-
+        if(!confirmPassword.equals(familyPassword)){
+            editTextConfirmPassword.setError("Passwords do not match. Please try again.");
+            editTextConfirmPassword.requestFocus();
+            return;
+        }
 
         progressBar.setVisibility(View.VISIBLE);
-        mAuth.createUserWithEmailAndPassword(email, password)
+        mAuth.createUserWithEmailAndPassword(email, familyPassword)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            User user = new User(firstName, lastName, email, household);
+                            User user = new User(name, email, adminRole);
                             FirebaseDatabase.getInstance().getReference("Users")
                                     .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
                                     .setValue(user)
@@ -130,15 +131,16 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                                         @Override
                                         public void onComplete(@NonNull Task<Void> task) {
                                             if (task.isSuccessful()) {
-                                                Toast.makeText(RegisterActivity.this, "User has been registered successfully!", Toast.LENGTH_LONG).show();
+                                                DatabaseReference householdRef = dbReference.child("Households");
+                                                householdRef.push().setValue(new Household(householdName,familyPassword,user));
+
+                                                Toast.makeText(RegisterActivity.this, "Household has been created successfully!", Toast.LENGTH_LONG).show();
                                                 progressBar.setVisibility(View.GONE);
 
                                                 //redirect to Login layout by closing this activity
                                                 finish();
-
-
                                             } else {
-                                                Toast.makeText(RegisterActivity.this, "Failed to register user. Try Again!", Toast.LENGTH_LONG).show();
+                                                Toast.makeText(RegisterActivity.this, "Something went wrong. Please try Again!", Toast.LENGTH_LONG).show();
                                                 progressBar.setVisibility(View.GONE);
                                             }
                                         }

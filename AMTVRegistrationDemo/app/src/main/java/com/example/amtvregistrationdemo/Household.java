@@ -3,12 +3,34 @@ package com.example.amtvregistrationdemo;
 import java.util.ArrayList;
 
 public class Household {
-    public ArrayList<User> members;
+    private User adminUser;
+    private ArrayList<User> members;
+    private ArrayList<Task> tasks;
+    private String householdName,familyPassword;
 
-    public Household() {}
+    private Household() {}
 
-    public Household(ArrayList<User> users) {
-        members = users;
+    public Household(String  householdName, String familyPassword, User adminUser) {
+        this.householdName = householdName;
+        this.familyPassword = familyPassword;
+        this.adminUser = adminUser;
+
+        members = new ArrayList<User>();
+        tasks = new ArrayList<Task>();
+        members.add(adminUser);
     }
+
+    public ArrayList<User> getMembers() {
+        return members;
+    }
+
+    public String getHouseholdName() {
+        return householdName;
+    }
+
+    public String getFamilyPassword() {
+        return familyPassword;
+    }
+
 
 }
