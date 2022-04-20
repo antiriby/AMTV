@@ -1,27 +1,30 @@
 # AMTV
 ## [Project Description](https://github.com/antiriby/AMTV/blob/main/MarkDown/Project-Description.md)
 
-## User Stories and Design Diagrams
-* [User Stories](https://github.com/antiriby/AMTV/blob/main/MarkDown/User_Stories.md)
-* [Design Diagrams](https://github.com/antiriby/AMTV/tree/main/MarkDown/Design%20Diagrams)
+## Test Plan and Results 
+* [Test Plan](https://github.com/antiriby/AMTV/blob/main/Test_Plan.pdf)
 
-## Project Tasks and Timeline
-* [Task List](https://github.com/antiriby/AMTV/blob/main/MarkDown/Tasklist.md)
-* [Timeline & Effort Matrix](https://github.com/antiriby/AMTV/blob/main/Milestones%2C%20Timeline%2C%20and%20Effort%20Matrix.pdf)
+## User Manual
+# Getting Started
+* [Creating an account](https://github.com/antiriby/AMTV/blob/main/MarkDown/Create_Account.md)
+* [Login to your account](https://github.com/antiriby/AMTV/blob/main/MarkDown/Login_Account.md)
+* [Inviting members to your household](https://github.com/antiriby/AMTV/blob/main/MarkDown/Invite_Members.md)
 
-## ABET Concerns Essay
-* [Project Contraints](https://github.com/antiriby/AMTV/blob/main/Project%20Constraints.pdf)
+* [Rewards](https://github.com/antiriby/AMTV/blob/main/MarkDown/Rewards.md)
+* [Tasks](https://github.com/antiriby/AMTV/blob/main/MarkDown/Tasks.md)
 
-## [Powerpoint Slideshow](https://github.com/antiriby/AMTV/blob/main/Slideshow.md)
 
-## Self-Assessment Essays
-* [Briana Antiri](https://github.com/antiriby/AMTV/blob/main/Self-Assessment%20Essays/Briana%20Antiri.md)
-* [Troy Meadows](https://github.com/antiriby/AMTV/blob/main/Self-Assessment%20Essays/Troy%20Meadows.md)
-* [Faith Tremmel](https://github.com/antiriby/AMTV/blob/main/Self-Assessment%20Essays/Faith%20Tremmel.md)
-* [Sydni-Dee Venter](https://github.com/antiriby/AMTV/blob/main/Self-Assessment%20Essays/Sydni-Dee%20Venter.md)
+## Final Presentation
+* [Presentation Slides](https://www.canva.com/design/DAE7Kufcxmc/CplhJN72EfB41_aqGhRNSA/view?utm_content=DAE7Kufcxmc&utm_campaign=designshare&utm_medium=link&utm_source=viewer)
+* [Presentation Video](https://www.canva.com/design/DAE8GsxFEdM/Eaxrx8Hv--hMzatkHhwYfA/watch?utm_content=DAE8GsxFEdM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
-## Professional Biographies
-* [Briana Antiri](https://github.com/antiriby/AMTV/blob/main/professional-bios/Briana%20Antiri.md)
-* [Troy Meadows](https://github.com/antiriby/AMTV/blob/main/professional-bios/Troy%20Meadows.md)
-* [Faith Tremmel](https://github.com/antiriby/AMTV/blob/main/professional-bios/Faith%20Tremmel.md)
-* [Sydni-Dee Venter](https://github.com/antiriby/AMTV/blob/main/professional-bios/Sydni-Dee%20Venter.md)
+## Final Expo Poster 
+* [Poster Link](https://drive.google.com/file/d/1-aaZaTIn8Rs8x4WxETNlhvC9nactY4Er/view?usp=sharing)
+
+## Assessments
+
+* [Initial Assessments](https://github.com/antiriby/AMTV/blob/main/Self-Assessment%20Essays/Initial%20Assessments)
+* [Final Assessments](https://github.com/antiriby/AMTV/tree/main/Self-Assessment%20Essays/Final%20Assessments)
+
+## Summary of Hours and Justification (one per individual team member)
+
