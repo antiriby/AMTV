@@ -1,12 +1,12 @@
 # AMTV
-## [Project Description](https://github.com/antiriby/AMTV/blob/main/Project-Description.md)
+## [Project Description](https://github.com/antiriby/AMTV/blob/main/MarkDown/Project-Description.md)
 
 ## User Stories and Design Diagrams
-* [User Stories](https://github.com/antiriby/AMTV/blob/main/User_Stories.md)
-* [Design Diagrams](https://github.com/antiriby/AMTV/tree/main/Design%20Diagrams)
+* [User Stories](https://github.com/antiriby/AMTV/blob/main/MarkDown/User_Stories.md)
+* [Design Diagrams](https://github.com/antiriby/AMTV/tree/main/MarkDown/Design%20Diagrams)
 
 ## Project Tasks and Timeline
-* [Task List](https://github.com/antiriby/AMTV/blob/main/Tasklist.md)
+* [Task List](https://github.com/antiriby/AMTV/blob/main/MarkDown/Tasklist.md)
 * [Timeline & Effort Matrix](https://github.com/antiriby/AMTV/blob/main/Milestones%2C%20Timeline%2C%20and%20Effort%20Matrix.pdf)
 
 ## ABET Concerns Essay
