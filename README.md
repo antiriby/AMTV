@@ -9,8 +9,8 @@
 * [Login to your account](https://github.com/antiriby/AMTV/blob/main/MarkDown/Login_Account.md)
 * [Inviting members to your household](https://github.com/antiriby/AMTV/blob/main/MarkDown/Invite_Members.md)
 
-* [Rewards](https://github.com/antiriby/AMTV/blob/main/MarkDown/Rewards.md)
-* [Tasks](https://github.com/antiriby/AMTV/blob/main/MarkDown/Tasks.md)
+* [Using Rewards](https://github.com/antiriby/AMTV/blob/main/MarkDown/Rewards.md)
+* [Using Tasks](https://github.com/antiriby/AMTV/blob/main/MarkDown/Tasks.md)
 
 
 ## Final Presentation
