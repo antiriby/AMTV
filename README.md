@@ -26,4 +26,4 @@
 * [Final Assessments](https://github.com/antiriby/AMTV/tree/main/Self-Assessment%20Essays/Final%20Assessments)
 
 ## Summary of Hours and Justification (one per individual team member)
-
+* [Summary of Hours](https://github.com/antiriby/AMTV/tree/main/Hour%20Summary)
