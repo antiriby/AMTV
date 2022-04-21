@@ -12,7 +12,7 @@ Figma Designs - 5 hours
 
 I worked on paper to get the designs of the application and then got it approved by the team. 
 ## Sprint 4
-Figma Designs - 10 hours
+Figma Designs - 15 hours
 
 I worked inside Figma to get the drawn designs inside the app. 
 ## Sprint 5
@@ -24,17 +24,19 @@ Login/Register - 2 hours
 
 I met with the team to approve the design in Android Studio and support creation and logic of the feature. 
 
+## Total Fall Hours: 39 Hours
+
 # Spring
 ## Sprint 7
-Tasks - 2 hours
+Tasks - 5 hours
 
 I met with the team to approve the design in Android Studio and support creation and logic of the feature. 
 ## Sprint 8
-Rewards - 2 hours
+Rewards - 5 hours
 
 I met with the team to approve the design in Android Studio and support creation and logic of the feature. 
 ## Sprint 9
-Permissions - 2 hours
+Permissions - 5 hours
 
 I met with the team to approve the design in Android Studio and support creation and logic of the feature. 
 ## Sprint 10
@@ -50,3 +52,5 @@ I worked on cleaning up the Figma and creating flows to show how a user would in
 Presentation Preperation - 2 hours
 
 I worked on creating the presentation and recording my parts.
+
+## Total Spring Hours: 27 Hours
